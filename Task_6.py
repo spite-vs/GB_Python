@@ -10,9 +10,9 @@ n = input('Введите номер билета: ')
 if len(n) % 2 == 0:
     sum = 0
     sum2 = 0
-    for i in n[:int(len(n)/2)]:
+    for i in n[:len(n)//2]:
         sum += int(i)
-    for j in n[-int(len(n)/2):]:
+    for j in n[-len(n)//2:]:
         sum2 += int(j)
     if sum == sum2:
         print('Билет счастливый!')
