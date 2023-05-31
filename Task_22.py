@@ -11,4 +11,4 @@ m = int(input('Введите количество элементов второ
 second_set = []
 for i in range(m):
     second_set.append(int(input(f'Введите {i+1} элемент множества: ')))
-print(sorted(set(first_set+second_set)))
+print(sorted(set(first_set) & set(second_set)))
